@@ -1,0 +1,88 @@
+@import 'mixins';
+@import 'edukacija';
+
+body{
+  background-color: #003366 !important;
+  overflow-x: hidden;
+  margin:0;
+  font-family: 'Roboto', sans-serif;
+
+  .content-holder{
+    width:80%;
+    margin:0 10%;
+
+    .coin-holder{
+      position: absolute;
+      top:60%;
+      z-index: 1000;
+      width: 100%;
+
+      .coinmarketcap-currency-widget{
+        width:50%;
+        margin:0 15%;
+        & >  div{
+          background: rgba(0, 0, 0, 0.5);
+          color:white;
+          height: 200px;
+          border: 2px solid #E4E6EB;
+          & > div{
+            line-height: 65px !important;
+            width:100% !important;
+            & > div{
+              span{
+                &:first-child{
+                  color:red;
+                }
+              }
+
+                br{
+                  content: ' '
+                }
+
+            }
+          }
+        }
+
+      }
+    }
+    .navholder{
+        background: rgba(0, 0, 0, 0.5);
+        position:fixed;
+        box-sizing: border-box;
+        right: 0;
+        top:50px;
+        color:white;
+        z-index:1000;
+        width:100%;
+        text-align: right;
+        overflow: hidden;
+        padding:10px 100px 10px 0;
+        .logoimg{
+          float: left;
+        }
+        nav{
+          a{
+            color:white;
+            text-decoration: none;
+            padding:10px;
+          }
+        }
+    }
+  }
+  footer {
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    border-top: 1px solid white;
+    p{
+      &:last-child{
+        font-size: 11px;
+      }
+    }
+
+  }
+
+}
