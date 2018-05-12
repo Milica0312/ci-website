@@ -1,3 +1,4 @@
+/*accordions*/
 (function($) {
 
     $('.accordion a').click(function(j) {
@@ -17,3 +18,31 @@
         j.preventDefault();
     });
 })(jQuery);
+/**/
+/*news*/
+$(window).load(function() {
+  $('.post-module').hover(function() {
+    $(this).find('.description').stop().animate({
+      height: "toggle",
+      opacity: "toggle"
+    }, 300);
+  });
+});
+
+
+/**/
+/**/
+
+$(window).scroll(function() {
+
+    //After scrolling 100px from the top...
+    if ( $(window).scrollTop() >= 100 ) {
+        //  $('#logo').css('display', 'none');
+        $('.navholder').css('background-color', 'white');
+        $('.navholder nav a').css('color', 'red');
+    //Otherwise remove inline styles and thereby revert to original stying
+    } else {
+        $('.navholder').attr('style', '');
+        $('.navholder nav a').attr('style', '');
+    }
+});/**/

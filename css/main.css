@@ -10,6 +10,9 @@
     list-style-type: none;
     color: white; }
 
+.news {
+  margin-top: -700px !important; }
+
 body {
   background-color: #003366 !important;
   overflow-x: hidden;
@@ -59,11 +62,10 @@ body {
         padding: 10px; }
   body footer {
     position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
     text-align: center;
     color: white;
-    border-top: 1px solid white; }
+    border-top: 1px solid white;
+    z-index: 10; }
     body footer p:last-child {
       font-size: 11px; }
