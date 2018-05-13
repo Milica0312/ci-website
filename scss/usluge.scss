@@ -1,0 +1,54 @@
+.services-holder{
+  /*background: rgba(0, 0, 0, 0.5);*/
+  position: absolute;
+  top:15%;
+  left:0;
+  z-index: 1000;
+  width:100%;
+
+
+
+  .line-services{
+    overflow:hidden;
+    widh:94%;
+    text-align: center;
+    margin:0 3%;
+    .oneservice{
+      width:22.8%;
+      float:left;
+      border: 1px solid white;
+      padding: 10px;
+      text-align: center;
+      background-color: rgba(255,255,255,0.8);
+      border-radius: 15px;
+      color:#003366;
+      height: 400px;
+      img{
+        width:80%;
+        height: auto;
+      }
+      h1{
+        margin:15px 0;
+        font-size: 24px;
+      }
+      p{
+        width:80%;
+        margin:0 10%;
+      }
+      &:hover{
+          background: rgba(0, 0, 0, 0.5);
+          transition: 0.8s;
+          color: white;
+      }
+      &:first-child{
+        margin-right: 1%;
+      }
+      &:nth-child(2){
+        margin-right: 1%;
+      }
+      &:nth-child(3){
+        margin-right: 1%;
+      }
+    }
+  }
+}

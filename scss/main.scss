@@ -1,10 +1,12 @@
-@import 'mixins';
-@import 'edukacija';
-@import 'vesti';
+@import 'mixins.scss';
+@import 'edukacija.scss';
+@import 'vesti.scss';
+@import 'kontakt.scss';
+@import 'usluge.scss';
 body{
   background-color: #003366 !important;
-  overflow-x: hidden;
   margin:0;
+  position: static;
   font-family: 'Roboto', sans-serif;
 
   .content-holder{
@@ -30,15 +32,17 @@ body{
             width:100% !important;
             & > div{
               span{
-                &:first-child{
-                  color:red;
-                }
+                padding-left: 50px;
               }
 
                 br{
                   content: ' '
                 }
-
+                span > span{
+                    width:33% !important;
+                    text-align: right !important;
+                    padding:0 50px;
+                }
             }
           }
         }
@@ -57,6 +61,12 @@ body{
         text-align: right;
         overflow: hidden;
         padding:10px 100px 10px 0;
+         @include mQ(768px){
+           top:0;
+           height: auto;
+           padding-bottom: 48px;
+           padding-top: 0;
+         }
         .logoimg{
           float: left;
         }
@@ -71,12 +81,13 @@ body{
   }
   footer {
     position: absolute;
-
+    bottom: 0;
     width: 100%;
     text-align: center;
     color: white;
     border-top: 1px solid white;
     z-index: 10;
+    padding: 15px 0;
     p{
       &:last-child{
         font-size: 11px;
