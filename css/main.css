@@ -240,9 +240,13 @@
   width: 100%; }
   .services-holder .line-services {
     overflow: hidden;
-    widh: 94%;
+    width: 94%;
     text-align: center;
     margin: 0 3%; }
+    @media screen and (max-width: 1700px) {
+      .services-holder .line-services {
+        width: 80%;
+        margin: 15px 10%; } }
     .services-holder .line-services .oneservice {
       width: 22.8%;
       float: left;
@@ -253,6 +257,17 @@
       border-radius: 15px;
       color: #003366;
       height: 400px; }
+      @media screen and (max-width: 768px) {
+        .services-holder .line-services .oneservice {
+          height: auto;
+          width: 80%;
+          margin: 15px 10%; } }
+      @media screen and (max-width: 1700px) and (min-width: 769px) {
+        .services-holder .line-services .oneservice {
+          height: auto;
+          width: 45%;
+          height: 350px;
+          margin: 15px auto; } }
       .services-holder .line-services .oneservice img {
         width: 80%;
         height: auto; }
@@ -291,6 +306,9 @@ body {
       body .content-holder .coin-holder .coinmarketcap-currency-widget {
         width: 50%;
         margin: 0 15%; }
+        @media screen and (max-width: 768px) {
+          body .content-holder .coin-holder .coinmarketcap-currency-widget {
+            margin: 0  5% 0 0; } }
         body .content-holder .coin-holder .coinmarketcap-currency-widget > div {
           background: rgba(0, 0, 0, 0.5);
           color: white;
@@ -318,8 +336,7 @@ body {
       z-index: 1000;
       width: 100%;
       text-align: right;
-      overflow: hidden;
-      padding: 10px 100px 10px 0; }
+      overflow: hidden; }
       @media screen and (max-width: 768px) {
         body .content-holder .navholder {
           top: 0;

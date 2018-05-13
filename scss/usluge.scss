@@ -6,13 +6,16 @@
   z-index: 1000;
   width:100%;
 
-
-
   .line-services{
     overflow:hidden;
-    widh:94%;
+    width:94%;
     text-align: center;
     margin:0 3%;
+    @include mQ(1700px){
+
+      width: 80%;
+      margin: 15px 10%;
+    }
     .oneservice{
       width:22.8%;
       float:left;
@@ -23,6 +26,17 @@
       border-radius: 15px;
       color:#003366;
       height: 400px;
+      @include mQ(768px){
+        height: auto;
+        width: 80%;
+        margin: 15px 10%;
+      }
+      @include mQ(1700px,769px){
+        height: auto;
+        width: 45%;
+        height: 350px;
+        margin:15px auto;
+      }
       img{
         width:80%;
         height: auto;
