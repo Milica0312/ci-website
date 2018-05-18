@@ -105,3 +105,17 @@ $(document).ready(function ($) {
 
 
 /**/
+
+
+/*fixing desktop nav*/
+
+
+    //$('#scrollDiv').hide();
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 100) {
+          $(".navholder").css({"top": "0", "transition": "0.5s"});
+        }
+        else {
+            $(".navholder").css({"top": "50", "transition": "0.5s"});
+        }
+    });

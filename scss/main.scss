@@ -69,6 +69,7 @@ body{
            height: auto;
            padding-bottom: 48px;
            padding-top: 0;
+           background: rgba(0, 0, 0, 0.9);
          }
         .logoimg{
           float: left;
@@ -83,7 +84,7 @@ body{
     }
   }
   footer {
-    position: absolute;
+    margin-top: 5px;
     bottom: 0;
     width: 100%;
     text-align: center;
@@ -99,4 +100,9 @@ body{
 
   }
 
+}
+.futerabsindex{
+  footer{
+    position: absolute;
+  }
 }
