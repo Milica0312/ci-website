@@ -860,10 +860,22 @@ article footer a:hover{
 /*about*/
 .about-holder{
     position: absolute;
-      top: 25%;
+      top: 21%;
       width: 50%;
-      left: 25%
+      color: black;
+      border-radius: 15px;
+      line-height: 24px;
       text-align: center;
+      border:1px solid black;
+}
+.about-holder{
+  padding:30px 70px;
+}
+.about-holder:hover{
+  background-color: rgba(0,0,0,0.5);
+  transition: 0.5s;
+  border:1px solid white;
+  color:white;
 }
 .aboutbckg{
   background-image: url('../imgs/bitcoin-3319215_640.jpg');
@@ -873,3 +885,20 @@ article footer a:hover{
 .aboutbckg footer{
   color:black !important;
 }
+.indexholdertext {
+    position: absolute;
+    top: 18%;
+    width: 80%;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border-radius: 15px;
+    line-height: 24px;
+}
+.indexholdertext p{
+  padding:30px 70px;
+}
+.indexholdertext:hover{
+  background-color: rgba(0,0,0,0.2);
+  transition: 0.5s;
+}
+/**/
