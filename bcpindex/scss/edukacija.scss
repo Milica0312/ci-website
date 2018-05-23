@@ -1,0 +1,37 @@
+.acc-holder{
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top:15%;
+  left:0;
+  z-index: 1000;
+  width:70%;
+  margin:0 15%;
+  ul{
+    list-style-type: none;
+    color:white;
+  }
+}
+
+.edukacijaabs{
+  position: absolute;
+  top:13%;
+
+  width: 100% !important;
+  margin:0 !important;
+  .newcclassmargin{
+    margin-bottom: 200px;
+    .accordion{
+      width: 80% !important;
+      background: rgba(0, 0, 0, 0.5);
+      margin:0 10% !important;
+      list-style-type: none;
+      color: white;
+
+    }
+  }
+}
+.futerabs {
+  footer{
+    position: absolute;
+  }
+}

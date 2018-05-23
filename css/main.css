@@ -35,12 +35,11 @@
 
 .contact-holder {
   background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 15%;
+  position: relative;
+  margin: 12% 15%;
   left: 0;
   z-index: 1000;
-  width: 70%;
-  margin: 0 15%; }
+  width: 70%; }
   .contact-holder form {
     padding: 20px;
     margin: 0 auto;
@@ -251,6 +250,7 @@
         transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9); }
 
 .services-holder {
+  margin-top: 9%;
   /*background: rgba(0, 0, 0, 0.5);*/
   /*  position: absolute;
   top:15%;
@@ -309,13 +309,15 @@
         margin-right: 1%; }
 
 .servicespos {
-  position: absolute;
+  position: relative;
+  z-index: 100000;
   top: 20%;
   width: 100% !important;
   margin: 0 !important; }
   @media screen and (max-width: 1700px) and (min-width: 769px) {
     .servicespos {
-      position: absolute;
+      position: relative;
+      z-index: 100000;
       top: 15%;
       width: 100% !important;
       margin: 0 !important; } }
@@ -325,61 +327,169 @@ body {
   margin: 0;
   position: static;
   font-family: 'Roboto', sans-serif; }
-  body .content-holder {
-    width: 80%;
-    margin: 0 10%; }
-    body .content-holder .coin-holder {
-      position: absolute;
-      top: 60%;
-      z-index: 1000;
-      width: 100%; }
-      body .content-holder .coin-holder .coinmarketcap-currency-widget {
-        width: 50%;
-        margin: 0 15%; }
-        @media screen and (max-width: 768px) {
-          body .content-holder .coin-holder .coinmarketcap-currency-widget {
-            margin: 0  5% 0 0; } }
-        body .content-holder .coin-holder .coinmarketcap-currency-widget > div {
-          background: rgba(0, 0, 0, 0.5);
-          color: white;
-          height: 200px;
-          border: 2px solid #E4E6EB; }
-          body .content-holder .coin-holder .coinmarketcap-currency-widget > div > div {
-            line-height: 65px !important;
-            width: 100% !important; }
-            body .content-holder .coin-holder .coinmarketcap-currency-widget > div > div > div span {
-              padding-left: 50px; }
-            body .content-holder .coin-holder .coinmarketcap-currency-widget > div > div > div br {
-              content: ' '; }
-            body .content-holder .coin-holder .coinmarketcap-currency-widget > div > div > div span > span {
-              width: 33% !important;
-              text-align: right !important;
-              padding: 0 50px; }
-    body .content-holder .navholder {
-      background: rgba(0, 0, 0, 0.5);
-      position: fixed;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      right: 0;
-      top: 50px;
+  body .navholder {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    right: 0;
+    top: 50px;
+    color: white;
+    z-index: 1000;
+    width: 100%;
+    text-align: right;
+    overflow: hidden; }
+    @media screen and (max-width: 768px) {
+      body .navholder {
+        top: 0;
+        height: auto;
+        padding-bottom: 48px;
+        padding-top: 0;
+        background: rgba(0, 0, 0, 0.9); } }
+    body .navholder .logoimg {
+      float: left; }
+    body .navholder nav a {
       color: white;
-      z-index: 1000;
-      width: 100%;
-      text-align: right;
-      overflow: hidden; }
+      text-decoration: none;
+      padding: 10px; }
+  body .testf {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    margin: 0; }
+    @media screen and (max-width: 768px) {
+      body .testf {
+        height: auto; } }
+    body .testf .indexholdertext {
+      width: 100%; }
       @media screen and (max-width: 768px) {
-        body .content-holder .navholder {
-          top: 0;
-          height: auto;
-          padding-bottom: 48px;
-          padding-top: 0;
-          background: rgba(0, 0, 0, 0.9); } }
-      body .content-holder .navholder .logoimg {
-        float: left; }
-      body .content-holder .navholder nav a {
-        color: white;
-        text-decoration: none;
-        padding: 10px; }
+        body .testf .indexholdertext {
+          position: relative;
+          margin-bottom: 100px; } }
+      body .testf .indexholdertext p {
+        padding: 15px 20px 30px 15px; }
+    @media screen and (max-width: 768px) {
+      body .testf #particle-canvas {
+        display: none; } }
+  body .testfedukacija {
+    position: relative;
+    background-image: url(../imgs/shutterstock_608688050.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    body .testfedukacija::before {
+      content: '';
+      display: block; }
+    body .testfedukacija .newcclassmargin {
+      padding-top: 150px; }
+      body .testfedukacija .newcclassmargin .accordion {
+        width: 80%;
+        margin: 0 auto;
+        list-style-type: none; }
+    body .testfedukacija #particle-canvas {
+      display: none; }
+  body .coin-holder {
+    position: absolute;
+    top: 60%;
+    z-index: 1000;
+    width: 100%; }
+    @media screen and (max-width: 768px) {
+      body .coin-holder {
+        position: relative;
+        margin-top: 16%; } }
+    @media screen and (max-width: 768px) {
+      body .coin-holder .coinmarketcap-currency-widget {
+        margin: 0  5% 0 0; } }
+    body .coin-holder .coinmarketcap-currency-widget > div {
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: 0 !important;
+      border-radius: 0 !important; }
+      body .coin-holder .coinmarketcap-currency-widget > div > div {
+        line-height: 65px !important;
+        width: 100% !important; }
+        body .coin-holder .coinmarketcap-currency-widget > div > div > div span {
+          padding-left: 50px;
+          min-width: 200px; }
+          body .coin-holder .coinmarketcap-currency-widget > div > div > div span:first-child {
+            padding-right: 50px; }
+        body .coin-holder .coinmarketcap-currency-widget > div > div > div br {
+          content: ' '; }
+        body .coin-holder .coinmarketcap-currency-widget > div > div > div span > span {
+          width: 33% !important;
+          text-align: right !important;
+          padding: 0 50px;
+          min-width: 200px; }
+        body .coin-holder .coinmarketcap-currency-widget > div > div > div:first-child {
+          width: 50% !important; }
+        body .coin-holder .coinmarketcap-currency-widget > div > div > div:last-child {
+          width: 50% !important; }
+          body .coin-holder .coinmarketcap-currency-widget > div > div > div:last-child img {
+            content: url("../imgs/bitcoin.jpg");
+            width: 50px;
+            height: 50px; }
+    @media screen and (max-width: 768px) {
+      body .coin-holder .bitcoincashe {
+        margin: 0  5% 0 0; } }
+    body .coin-holder .bitcoincashe > div {
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: 0 !important;
+      border-radius: 0 !important; }
+      body .coin-holder .bitcoincashe > div > div {
+        line-height: 65px !important;
+        width: 100% !important; }
+        body .coin-holder .bitcoincashe > div > div > div span {
+          padding-left: 50px;
+          min-width: 200px; }
+          body .coin-holder .bitcoincashe > div > div > div span:first-child {
+            padding-right: 0; }
+        body .coin-holder .bitcoincashe > div > div > div br {
+          content: ' '; }
+        body .coin-holder .bitcoincashe > div > div > div span > span {
+          width: 33% !important;
+          text-align: right !important;
+          padding: 0 50px;
+          min-width: 200px; }
+        body .coin-holder .bitcoincashe > div > div > div:first-child {
+          width: 50% !important; }
+        body .coin-holder .bitcoincashe > div > div > div:last-child {
+          width: 50% !important; }
+          body .coin-holder .bitcoincashe > div > div > div:last-child img {
+            content: url("../imgs/.jpg");
+            width: 50px;
+            height: 50px; }
+    @media screen and (max-width: 768px) {
+      body .coin-holder .ethereum {
+        margin: 0  5% 0 0; } }
+    body .coin-holder .ethereum > div {
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: 0 !important;
+      border-radius: 0 !important; }
+      body .coin-holder .ethereum > div > div {
+        line-height: 65px !important;
+        width: 100% !important; }
+        body .coin-holder .ethereum > div > div > div span {
+          padding-left: 50px;
+          min-width: 200px; }
+          body .coin-holder .ethereum > div > div > div span:first-child {
+            padding-right: 30px; }
+        body .coin-holder .ethereum > div > div > div br {
+          content: ' '; }
+        body .coin-holder .ethereum > div > div > div span > span {
+          width: 33% !important;
+          text-align: right !important;
+          padding: 0 50px;
+          min-width: 200px; }
+        body .coin-holder .ethereum > div > div > div:first-child {
+          width: 50% !important; }
+        body .coin-holder .ethereum > div > div > div:last-child {
+          width: 50% !important; }
+          body .coin-holder .ethereum > div > div > div:last-child img {
+            content: url("../imgs/.jpg");
+            width: 50px;
+            height: 50px; }
   body footer {
     margin-top: 5px;
     bottom: 0;
@@ -388,9 +498,21 @@ body {
     color: white;
     border-top: 1px solid white;
     z-index: 10;
-    padding: 15px 0; }
+    padding: 15px 0;
+    font-size: 12px; }
     body footer p:last-child {
       font-size: 11px; }
+    body footer .documents {
+      position: absolute;
+      right: 0;
+      bottom: 0; }
+      body footer .documents a {
+        color: white;
+        font-size: 10px;
+        padding-top: 5px; }
 
 .futerabsindex footer {
   position: absolute; }
+  @media screen and (max-width: 768px) {
+    .futerabsindex footer {
+      position: relative; } }

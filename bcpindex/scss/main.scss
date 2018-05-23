@@ -1,0 +1,139 @@
+@import 'mixins.scss';
+@import 'edukacija.scss';
+@import 'vesti.scss';
+@import 'kontakt.scss';
+@import 'usluge.scss';
+body{
+  background-color: #003366 !important;
+  margin:0;
+  position: static;
+  font-family: 'Roboto', sans-serif;
+  .navholder{
+      background: rgba(0, 0, 0, 0.5);
+      position:fixed;
+      box-sizing: border-box;
+      right: 0;
+      top:50px;
+      color:white;
+      z-index:1000;
+      width:100%;
+      text-align: right;
+      overflow: hidden;
+
+       @include mQ(768px){
+         top:0;
+         height: auto;
+         padding-bottom: 48px;
+         padding-top: 0;
+         background: rgba(0, 0, 0, 0.9);
+       }
+      .logoimg{
+        float: left;
+      }
+      nav{
+        a{
+          color:white;
+          text-decoration: none;
+          padding:10px;
+        }
+      }
+  }
+  .testf{
+    position: relative;
+    height: 100vh;
+    @include mQ(768px){
+      height: auto;
+    }
+
+      width:100%;
+      margin:0;
+      .indexholdertext{
+        width:100%;
+          @include mQ(768px){
+            position: relative;
+            margin-bottom: 100px;
+          }
+        p{
+          padding:15px 20px 30px 15px;
+        }
+      }
+
+    #particle-canvas{
+      @include mQ(768px){
+        display:none;
+      }
+    }
+  }
+
+
+    .coin-holder{
+      position: absolute;
+      top:60%;
+      z-index: 1000;
+      width: 100%;
+      @include mQ(768px){
+        position: relative;
+        margin-top:16%;
+      }
+
+      .coinmarketcap-currency-widget{
+        width:50%;
+        margin:0 15%;
+        @include mQ(768px){
+          margin:0  5% 0 0;
+        }
+        & >  div{
+          background: rgba(0, 0, 0, 0.5);
+          color:white;
+          height: 200px;
+          border: 2px solid #E4E6EB;
+          & > div{
+            line-height: 65px !important;
+            width:100% !important;
+            & > div{
+              span{
+                padding-left: 50px;
+              }
+
+                br{
+                  content: ' '
+                }
+                span > span{
+                    width:33% !important;
+                    text-align: right !important;
+                    padding:0 50px;
+                }
+            }
+          }
+        }
+
+      }
+    }
+
+
+  footer {
+    margin-top: 5px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    border-top: 1px solid white;
+    z-index: 10;
+    padding: 15px 0;
+    p{
+      &:last-child{
+        font-size: 11px;
+      }
+    }
+
+  }
+
+}
+.futerabsindex{
+  footer{
+    position: absolute;
+    @include mQ(768px){
+      position: relative;
+    }
+  }
+}

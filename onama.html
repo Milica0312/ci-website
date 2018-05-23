@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/canvas.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body class="futerabsindex aboutbckg" >
+  <body class=" aboutbckg" >
 
     <div class="content-holder">
       <div class="about-holder">
@@ -36,7 +36,7 @@
         </nav>
       </div>
     </div>
-    <footer>
+    <footer class="aboutf">
       <p>&copy; 2018 CRYPTOCURRENCY INVESTMENT<br />Sva prava zadržana. <br />Doublemp Tim<p>
       <p>
         Ulaganje u kritpovalute predstavlja rizik uprkos velikoj mogućnosti za zaradu. Pre donošenja odluke da kupite kriptovalute, savetujemo da istražite i da uložite samo onoliko novca koliko ste spremni da izgubite.
@@ -54,13 +54,15 @@
     <script  src="js/main.js"></script>
     <script>
     $(document).ready(function() {
+      var windowSize = $(window).width();
+       if(windowSize < 768 ) {
+          $(".about-holder").css("right",-$(this).width()).animate({  right:'0'  }, 2000);
+      }
+      else {
 
-      $(".about-holder")
-    .css("right",-$(this).width())
-    .animate({
-        right:'-20px'
-    }, 2000);
+            $(".about-holder").css("right",-$(this).width()).animate({  right:'-50px'  }, 2000);
 
+    }
     });
 
     </script>

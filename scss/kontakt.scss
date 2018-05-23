@@ -1,11 +1,11 @@
 .contact-holder{
   background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top:15%;
+  position: relative;
+  margin:12% 15%;
   left:0;
   z-index: 1000;
   width:70%;
-  margin:0 15%;
+
 
   $custom-easing: cubic-bezier(1, .1, 0, 0.9);
   $blue: #0288D1;

@@ -1,0 +1,419 @@
+.acc-holder {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 15%;
+  left: 0;
+  z-index: 1000;
+  width: 70%;
+  margin: 0 15%; }
+  .acc-holder ul {
+    list-style-type: none;
+    color: white; }
+
+.edukacijaabs {
+  position: absolute;
+  top: 13%;
+  width: 100% !important;
+  margin: 0 !important; }
+  .edukacijaabs .newcclassmargin {
+    margin-bottom: 200px; }
+    .edukacijaabs .newcclassmargin .accordion {
+      width: 80% !important;
+      background: rgba(0, 0, 0, 0.5);
+      margin: 0 10% !important;
+      list-style-type: none;
+      color: white; }
+
+.futerabs footer {
+  position: absolute; }
+
+.news {
+  position: absolute;
+  top: 12%;
+  width: 100% !important;
+  margin: 0 !important; }
+
+.contact-holder {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 15%;
+  left: 0;
+  z-index: 1000;
+  width: 70%;
+  margin: 0 15%; }
+  .contact-holder form {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px; }
+    .contact-holder form h1 {
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+      font-family: 'Open Sans';
+      font-weight: 100;
+      text-align: center;
+      color: #0288D1;
+      border-bottom: 1px solid #ccc; }
+    .contact-holder form .row {
+      margin-bottom: 25px;
+      position: relative;
+      overflow: hidden; }
+    .contact-holder form input[type="text"], .contact-holder form input[type="password"], .contact-holder form input[type="email"], .contact-holder form textarea {
+      width: 100%;
+      height: 40px;
+      padding: 10px 10px 10px 90px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      color: #333;
+      border-radius: 3px;
+      -webkit-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+      -o-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+      transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9); }
+    .contact-holder form textarea {
+      height: auto;
+      min-height: 200px;
+      padding: 50px 10px 10px 10px; }
+    .contact-holder form input[type="text"] + label, .contact-holder form input[type="password"] + label, .contact-holder form input[type="email"] + label, .contact-holder form textarea + label {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      height: 40px;
+      line-height: 40px;
+      font-size: 12px;
+      font-weight: bold;
+      width: 100px;
+      text-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      color: white;
+      background: #0288D1;
+      border-radius: 3px 0 0 3px;
+      -webkit-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+      -o-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+      transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+      -webkit-transform: translateZ(0) translateX(0);
+      transform: translateZ(0) translateX(0); }
+    .contact-holder form textarea + label {
+      width: 100%;
+      border-radius: 3px 3px 0 0; }
+    .contact-holder form input[type="text"]:focus, .contact-holder form input[type="email"]:focus, .contact-holder form input[type="password"]:focus {
+      padding-left: 10px; }
+    .contact-holder form textarea:focus {
+      padding-top: 10px; }
+    .contact-holder form input[type="text"]:focus + label, .contact-holder form input[type="password"]:focus + label, .contact-holder form input[type="email"]:focus + label {
+      -webkit-transform: translateZ(0) translateX(-100%);
+      transform: translateZ(0) translateX(-100%); }
+    .contact-holder form textarea:focus + label {
+      -webkit-transform: translateZ(0) translateY(-100%);
+      transform: translateZ(0) translateY(-100%); }
+    .contact-holder form input[type="checkbox"], .contact-holder form input[type="radio"] {
+      position: absolute;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      width: 1px;
+      margin: -1px;
+      padding: 0; }
+    .contact-holder form input[type="radio"] + label {
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      text-indent: -9999px;
+      background: #ccc;
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      cursor: pointer;
+      -webkit-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+      -o-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+      transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9); }
+      .contact-holder form input[type="radio"] + label:before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 10px;
+        width: 10px;
+        top: 50%;
+        left: 50%;
+        background: white;
+        border-radius: 100%;
+        -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+        -webkit-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9) 0.1s;
+        -o-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9) 0.1s;
+        transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9) 0.1s;
+        -webkit-transform: translateZ(0) translate(-50%, -50%) scale(0);
+        transform: translateZ(0) translate(-50%, -50%) scale(0); }
+    .contact-holder form input[type="radio"]:checked + label {
+      background: #0288D1; }
+      .contact-holder form input[type="radio"]:checked + label:before {
+        -webkit-transform: translateZ(0) translate(-50%, -50%) scale(1);
+        transform: translateZ(0) translate(-50%, -50%) scale(1); }
+    .contact-holder form input[type="checkbox"] + label {
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      text-indent: -9999px;
+      background: #ccc;
+      width: 60px;
+      height: 30px;
+      border-radius: 100px;
+      cursor: pointer;
+      -webkit-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+      -o-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+      transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9); }
+      .contact-holder form input[type="checkbox"] + label:before {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: #0288D1;
+        border-radius: 100px;
+        -webkit-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9) 0.1s;
+        -o-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9) 0.1s;
+        transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9) 0.1s;
+        -webkit-transform: translateZ(0) scale(0);
+        transform: translateZ(0) scale(0); }
+      .contact-holder form input[type="checkbox"] + label:after {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        display: block;
+        height: 26px;
+        width: 26px;
+        background: white;
+        border-radius: 100%;
+        -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+        -webkit-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+        -o-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+        transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+        -webkit-transform: translateZ(0) translateX(0);
+        transform: translateZ(0) translateX(0); }
+    .contact-holder form input[type="checkbox"]:checked + label {
+      background: #0288D1; }
+      .contact-holder form input[type="checkbox"]:checked + label:after {
+        left: calc(100% - 28px);
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0); }
+    .contact-holder form button {
+      position: relative;
+      overflow: hidden;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 20px;
+      font-size: 12px;
+      font-weight: bold;
+      text-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      color: white;
+      border: none;
+      background: #0288D1;
+      border-radius: 3px;
+      -webkit-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+      -o-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+      transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+      -webkit-transform: translateZ(0) translateX(0);
+      transform: translateZ(0) translateX(0);
+      z-index: 2; }
+      .contact-holder form button:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: #01579B;
+        height: 100%;
+        width: 100%;
+        border-radius: 3px;
+        -webkit-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+        -o-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+        transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+        -webkit-transform: translateZ(0) scale(0);
+        transform: translateZ(0) scale(0);
+        z-index: -1; }
+      .contact-holder form button:hover:before, .contact-holder form button:focus:before {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+        -o-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+        transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9); }
+
+.services-holder {
+  /*background: rgba(0, 0, 0, 0.5);*/
+  /*  position: absolute;
+  top:15%;
+  left:0;
+  z-index: 1000;
+  width:100%;*/ }
+  .services-holder .line-services {
+    overflow: hidden;
+    width: 94%;
+    text-align: center;
+    margin: 0 3%; }
+    @media screen and (max-width: 1700px) {
+      .services-holder .line-services {
+        width: 80%;
+        margin: 15px 10%; } }
+    .services-holder .line-services .oneservice {
+      width: 22.8%;
+      float: left;
+      border: 1px solid white;
+      padding: 10px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.8);
+      color: #003366;
+      height: 450px; }
+      @media screen and (max-width: 768px) {
+        .services-holder .line-services .oneservice {
+          height: auto;
+          width: 90%;
+          margin: 15px auto; } }
+      @media screen and (max-width: 1700px) and (min-width: 769px) {
+        .services-holder .line-services .oneservice {
+          height: auto;
+          width: 45%;
+          height: 450px;
+          margin: 15px auto; } }
+      .services-holder .line-services .oneservice img {
+        width: 100%;
+        height: auto; }
+      .services-holder .line-services .oneservice h1 {
+        margin: 15px 0;
+        font-size: 24px; }
+      .services-holder .line-services .oneservice p {
+        width: 80%;
+        margin: 0 10%; }
+      .services-holder .line-services .oneservice:hover {
+        background: rgba(0, 0, 0, 0.5);
+        -webkit-transition: 0.8s;
+        -o-transition: 0.8s;
+        transition: 0.8s;
+        color: white; }
+      .services-holder .line-services .oneservice:first-child {
+        margin-right: 1%; }
+      .services-holder .line-services .oneservice:nth-child(2) {
+        margin-right: 1%; }
+      .services-holder .line-services .oneservice:nth-child(3) {
+        margin-right: 1%; }
+
+.servicespos {
+  position: absolute;
+  top: 20%;
+  width: 100% !important;
+  margin: 0 !important; }
+  @media screen and (max-width: 1700px) and (min-width: 769px) {
+    .servicespos {
+      position: absolute;
+      top: 15%;
+      width: 100% !important;
+      margin: 0 !important; } }
+
+body {
+  background-color: #003366 !important;
+  margin: 0;
+  position: static;
+  font-family: 'Roboto', sans-serif; }
+  body .navholder {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    right: 0;
+    top: 50px;
+    color: white;
+    z-index: 1000;
+    width: 100%;
+    text-align: right;
+    overflow: hidden; }
+    @media screen and (max-width: 768px) {
+      body .navholder {
+        top: 0;
+        height: auto;
+        padding-bottom: 48px;
+        padding-top: 0;
+        background: rgba(0, 0, 0, 0.9); } }
+    body .navholder .logoimg {
+      float: left; }
+    body .navholder nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px; }
+  body .testf {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    margin: 0; }
+    @media screen and (max-width: 768px) {
+      body .testf {
+        height: auto; } }
+    body .testf .indexholdertext {
+      width: 100%; }
+      @media screen and (max-width: 768px) {
+        body .testf .indexholdertext {
+          position: relative;
+          margin-bottom: 100px; } }
+      body .testf .indexholdertext p {
+        padding: 15px 20px 30px 15px; }
+    @media screen and (max-width: 768px) {
+      body .testf #particle-canvas {
+        display: none; } }
+  body .coin-holder {
+    position: absolute;
+    top: 60%;
+    z-index: 1000;
+    width: 100%; }
+    @media screen and (max-width: 768px) {
+      body .coin-holder {
+        position: relative;
+        margin-top: 16%; } }
+    body .coin-holder .coinmarketcap-currency-widget {
+      width: 50%;
+      margin: 0 15%; }
+      @media screen and (max-width: 768px) {
+        body .coin-holder .coinmarketcap-currency-widget {
+          margin: 0  5% 0 0; } }
+      body .coin-holder .coinmarketcap-currency-widget > div {
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        height: 200px;
+        border: 2px solid #E4E6EB; }
+        body .coin-holder .coinmarketcap-currency-widget > div > div {
+          line-height: 65px !important;
+          width: 100% !important; }
+          body .coin-holder .coinmarketcap-currency-widget > div > div > div span {
+            padding-left: 50px; }
+          body .coin-holder .coinmarketcap-currency-widget > div > div > div br {
+            content: ' '; }
+          body .coin-holder .coinmarketcap-currency-widget > div > div > div span > span {
+            width: 33% !important;
+            text-align: right !important;
+            padding: 0 50px; }
+  body footer {
+    margin-top: 5px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    border-top: 1px solid white;
+    z-index: 10;
+    padding: 15px 0; }
+    body footer p:last-child {
+      font-size: 11px; }
+
+.futerabsindex footer {
+  position: absolute; }
+  @media screen and (max-width: 768px) {
+    .futerabsindex footer {
+      position: relative; } }

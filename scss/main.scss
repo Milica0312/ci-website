@@ -8,34 +8,119 @@ body{
   margin:0;
   position: static;
   font-family: 'Roboto', sans-serif;
+  .navholder{
+      background: rgba(0, 0, 0, 0.5);
+      position:fixed;
+      box-sizing: border-box;
+      right: 0;
+      top:50px;
+      color:white;
+      z-index:1000;
+      width:100%;
+      text-align: right;
+      overflow: hidden;
 
-  .content-holder{
-    width:80%;
-    margin:0 10%;
+       @include mQ(768px){
+         top:0;
+         height: auto;
+         padding-bottom: 48px;
+         padding-top: 0;
+         background: rgba(0, 0, 0, 0.9);
+       }
+      .logoimg{
+        float: left;
+      }
+      nav{
+        a{
+          color:white;
+          text-decoration: none;
+          padding:10px;
+        }
+      }
+  }
+  .testf{
+    position: relative;
+    height: 100vh;
+    @include mQ(768px){
+      height: auto;
+    }
+
+      width:100%;
+      margin:0;
+      .indexholdertext{
+        width:100%;
+          @include mQ(768px){
+            position: relative;
+            margin-bottom: 100px;
+          }
+        p{
+          padding:15px 20px 30px 15px;
+        }
+      }
+
+    #particle-canvas{
+      @include mQ(768px){
+        display:none;
+      }
+    }
+  }
+.testfedukacija{
+  position: relative;
+  background-image: url(../imgs/shutterstock_608688050.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+  &::before{
+    content: '';
+    display: block;
+  }
+  .newcclassmargin{
+    padding-top: 150px;
+    .accordion{
+      width: 80%;
+      margin:0 auto;
+      list-style-type: none;
+    }
+  }
+
+  #particle-canvas{
+
+      display:none;
+
+  }
+}
 
     .coin-holder{
       position: absolute;
       top:60%;
       z-index: 1000;
       width: 100%;
+      @include mQ(768px){
+        position: relative;
+        margin-top:16%;
+      }
 
       .coinmarketcap-currency-widget{
-        width:50%;
-        margin:0 15%;
+
         @include mQ(768px){
           margin:0  5% 0 0;
         }
         & >  div{
           background: rgba(0, 0, 0, 0.5);
-          color:white;
-          height: 200px;
-          border: 2px solid #E4E6EB;
+          color: white;
+          border: 0 !important;
+          border-radius: 0 !important;
           & > div{
             line-height: 65px !important;
             width:100% !important;
+
             & > div{
               span{
                 padding-left: 50px;
+                min-width: 200px;
+                &:first-child{
+                  padding-right: 50px;
+                }
               }
 
                 br{
@@ -45,44 +130,124 @@ body{
                     width:33% !important;
                     text-align: right !important;
                     padding:0 50px;
+                    min-width: 200px;
+                }
+                &:first-child{
+                  width:50% !important;
+                }
+                &:last-child{
+                  width:50% !important;
+                  img{
+                    content:url("../imgs/bitcoin.jpg");
+                    width:50px;
+                    height: 50px;
+                  }
                 }
             }
+
+          }
+        }
+
+      }
+      .bitcoincashe{
+
+        @include mQ(768px){
+          margin:0  5% 0 0;
+        }
+        & >  div{
+          background: rgba(0, 0, 0, 0.5);
+          color: white;
+          border: 0 !important;
+          border-radius: 0 !important;
+          & > div{
+            line-height: 65px !important;
+            width:100% !important;
+            & > div{
+              span{
+                padding-left: 50px;
+                min-width: 200px;
+                &:first-child{
+                  padding-right: 0;
+                }
+              }
+
+                br{
+                  content: ' '
+                }
+                span > span{
+                    width:33% !important;
+                    text-align: right !important;
+                    padding:0 50px;
+                    min-width: 200px;
+                }
+                &:first-child{
+                  width:50% !important
+                }
+                &:last-child{
+                  width:50% !important;
+                  img{
+                    content:url("../imgs/.jpg");
+                    width:50px;
+                    height: 50px;
+                  }
+                }
+            }
+
+          }
+        }
+
+      }
+      .ethereum{
+
+        @include mQ(768px){
+          margin:0  5% 0 0;
+        }
+        & >  div{
+          background: rgba(0, 0, 0, 0.5);
+          color: white;
+          border: 0 !important;
+          border-radius: 0 !important;
+          & > div{
+            line-height: 65px !important;
+            width:100% !important;
+            & > div{
+              span{
+                padding-left: 50px;
+                min-width: 200px;
+                &:first-child{
+                  padding-right: 30px;
+                }
+              }
+
+                br{
+                  content: ' '
+                }
+                span > span{
+                    width:33% !important;
+                    text-align: right !important;
+                    padding:0 50px;
+                    min-width: 200px;
+                }
+                &:first-child{
+                  width:50% !important
+                }
+                &:last-child{
+                  width:50% !important;
+                  img{
+                    content:url("../imgs/.jpg");
+                    width:50px;
+                    height: 50px;
+                  }
+                }
+            }
+
           }
         }
 
       }
     }
-    .navholder{
-        background: rgba(0, 0, 0, 0.5);
-        position:fixed;
-        box-sizing: border-box;
-        right: 0;
-        top:50px;
-        color:white;
-        z-index:1000;
-        width:100%;
-        text-align: right;
-        overflow: hidden;
 
-         @include mQ(768px){
-           top:0;
-           height: auto;
-           padding-bottom: 48px;
-           padding-top: 0;
-           background: rgba(0, 0, 0, 0.9);
-         }
-        .logoimg{
-          float: left;
-        }
-        nav{
-          a{
-            color:white;
-            text-decoration: none;
-            padding:10px;
-          }
-        }
-    }
-  }
+
   footer {
     margin-top: 5px;
     bottom: 0;
@@ -92,17 +257,30 @@ body{
     border-top: 1px solid white;
     z-index: 10;
     padding: 15px 0;
+    font-size: 12px;
     p{
       &:last-child{
         font-size: 11px;
       }
     }
-
+    .documents {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    a{
+        color: white;
+        font-size: 10px;
+        padding-top: 5px;
+      }
+  }
   }
 
 }
 .futerabsindex{
   footer{
     position: absolute;
+    @include mQ(768px){
+      position: relative;
+    }
   }
 }
