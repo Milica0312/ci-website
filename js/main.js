@@ -38,8 +38,8 @@ $(window).scroll(function() {
     //After scrolling 100px from the top...
     if ( $(window).scrollTop() >= 100 ) {
         //  $('#logo').css('display', 'none');
-        $('.navholder').css('background-color', 'white');
-        $('.navholder nav a').css('color', 'red');
+        $('.navholder').css('background-color', '#164d74');
+        $('.navholder nav a').css('color', 'white');
     //Otherwise remove inline styles and thereby revert to original stying
     } else {
         $('.navholder').attr('style', '');

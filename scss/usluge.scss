@@ -39,7 +39,6 @@
         margin:15px auto;
       }
       img{
-        width:100%;
         height: auto;
       }
       h1{
@@ -49,11 +48,15 @@
       p{
         width:80%;
         margin:0 10%;
+        a{
+          color: #003366;
+        }
       }
       &:hover{
           background: rgba(0, 0, 0, 0.5);
           transition: 0.8s;
           color: white;
+
       }
       &:first-child{
         margin-right: 1%;
@@ -63,6 +66,18 @@
       }
       &:nth-child(3){
         margin-right: 1%;
+      }
+    }
+    .vipholder{
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.5);
+      .viph{
+        font-size: 50px;
+        a{
+        color: white !important;
+        }
       }
     }
   }

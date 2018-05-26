@@ -56,7 +56,7 @@
       margin-bottom: 25px;
       position: relative;
       overflow: hidden; }
-    .contact-holder form input[type="text"], .contact-holder form input[type="password"], .contact-holder form input[type="email"], .contact-holder form textarea {
+    .contact-holder form input[type="text"], .contact-holder form input[type="password"], .contact-holder form input[type="email"], .contact-holder form input[type="tel"], .contact-holder form textarea, .contact-holder form select {
       width: 100%;
       height: 40px;
       padding: 10px 10px 10px 90px;
@@ -72,7 +72,7 @@
       height: auto;
       min-height: 200px;
       padding: 50px 10px 10px 10px; }
-    .contact-holder form input[type="text"] + label, .contact-holder form input[type="password"] + label, .contact-holder form input[type="email"] + label, .contact-holder form textarea + label {
+    .contact-holder form input[type="text"] + label, .contact-holder form input[type="password"] + label, .contact-holder form input[type="email"] + label, .contact-holder form input[type="tel"] + label, .contact-holder form textarea + label, .contact-holder form select + label {
       position: absolute;
       top: 0;
       bottom: 0;
@@ -97,11 +97,11 @@
     .contact-holder form textarea + label {
       width: 100%;
       border-radius: 3px 3px 0 0; }
-    .contact-holder form input[type="text"]:focus, .contact-holder form input[type="email"]:focus, .contact-holder form input[type="password"]:focus {
+    .contact-holder form input[type="text"]:focus, .contact-holder form input[type="email"]:focus, .contact-holder form input[type="password"]:focus, .contact-holder form input[type="tel"]:focus, .contact-holder form select:focus {
       padding-left: 10px; }
     .contact-holder form textarea:focus {
       padding-top: 10px; }
-    .contact-holder form input[type="text"]:focus + label, .contact-holder form input[type="password"]:focus + label, .contact-holder form input[type="email"]:focus + label {
+    .contact-holder form input[type="text"]:focus + label, .contact-holder form input[type="password"]:focus + label, .contact-holder form input[type="email"]:focus + label, .contact-holder form input[type="tel"]:focus + label {
       -webkit-transform: translateZ(0) translateX(-100%);
       transform: translateZ(0) translateX(-100%); }
     .contact-holder form textarea:focus + label {
@@ -287,7 +287,6 @@
           height: 450px;
           margin: 15px auto; } }
       .services-holder .line-services .oneservice img {
-        width: 100%;
         height: auto; }
       .services-holder .line-services .oneservice h1 {
         margin: 15px 0;
@@ -295,6 +294,8 @@
       .services-holder .line-services .oneservice p {
         width: 80%;
         margin: 0 10%; }
+        .services-holder .line-services .oneservice p a {
+          color: #003366; }
       .services-holder .line-services .oneservice:hover {
         background: rgba(0, 0, 0, 0.5);
         -webkit-transition: 0.8s;
@@ -307,6 +308,21 @@
         margin-right: 1%; }
       .services-holder .line-services .oneservice:nth-child(3) {
         margin-right: 1%; }
+    .services-holder .line-services .vipholder {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.5); }
+      .services-holder .line-services .vipholder .viph {
+        font-size: 50px; }
+        .services-holder .line-services .vipholder .viph a {
+          color: white !important; }
 
 .servicespos {
   position: relative;
@@ -326,7 +342,7 @@ body {
   background-color: #003366 !important;
   margin: 0;
   position: static;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif !important; }
   body .navholder {
     background: rgba(0, 0, 0, 0.5);
     position: fixed;
@@ -345,7 +361,7 @@ body {
         height: auto;
         padding-bottom: 48px;
         padding-top: 0;
-        background: rgba(0, 0, 0, 0.9); } }
+        z-index: 1000000; } }
     body .navholder .logoimg {
       float: left; }
     body .navholder nav a {
@@ -376,7 +392,11 @@ body {
     background-image: url(../imgs/shutterstock_608688050.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: cover;
+    height: 100vh; }
+    @media screen and (max-width: 768px) {
+      body .testfedukacija {
+        height: auto; } }
     body .testfedukacija::before {
       content: '';
       display: block; }
@@ -425,7 +445,7 @@ body {
         body .coin-holder .coinmarketcap-currency-widget > div > div > div:last-child {
           width: 50% !important; }
           body .coin-holder .coinmarketcap-currency-widget > div > div > div:last-child img {
-            content: url("../imgs/bitcoin.jpg");
+            content: url("../imgs/bitcoin.png");
             width: 50px;
             height: 50px; }
     @media screen and (max-width: 768px) {
@@ -456,7 +476,7 @@ body {
         body .coin-holder .bitcoincashe > div > div > div:last-child {
           width: 50% !important; }
           body .coin-holder .bitcoincashe > div > div > div:last-child img {
-            content: url("../imgs/.jpg");
+            content: url("../imgs/cashe.svg");
             width: 50px;
             height: 50px; }
     @media screen and (max-width: 768px) {
@@ -487,7 +507,7 @@ body {
         body .coin-holder .ethereum > div > div > div:last-child {
           width: 50% !important; }
           body .coin-holder .ethereum > div > div > div:last-child img {
-            content: url("../imgs/.jpg");
+            content: url("../imgs/iconfinder-icon.svg");
             width: 50px;
             height: 50px; }
   body footer {

@@ -1,0 +1,13 @@
+<svg width="256" height="256" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <circle fill="#f9f9f9" r="128" id="Эллипс_9" cy="128" cx="128" class="cls-1"/>
+  <path fill-rule="evenodd" fill="#112f55" id="Фигура_2" d="m128.2,23l-64.2,106.641l64.2,38.144l63.8,-38.144l-63.8,-106.641zm-64.2,119.355l64.2,37.735l63.8,-37.735l-63.8,90.645l-64.2,-90.645z" class="cls-2"/>
+  <path opacity="0.8" fill="#131313" fill-rule="evenodd" id="Фигура_3" d="m128.2,100.93l-64.2,28.711l64.2,38.144l63.8,-38.144l-63.8,-28.711z" class="cls-4"/>
+ </g>
+</svg>

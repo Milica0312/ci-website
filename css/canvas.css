@@ -9,6 +9,7 @@
 .educationf{
   margin:0;
   background:rgba(0,0,0,0.5);
+  position: absolute;
 }
 .absf{
   position: absolute;
@@ -47,7 +48,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #2098D1;
+  background: #467190;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -503,6 +504,9 @@ nav {
 
 
 @media screen and (max-width: 768px) {
+  .educationf{
+    position: relative !important;
+  }
   /* Center the logo and remove the bar */
     .logo {
         position: absolute;
@@ -516,7 +520,7 @@ nav {
 
   /* Hamburger */
     .button {
-        background: #751CEC;
+        background: #467190;
         width: 60px;
         height: 48px;
         position: absolute;
@@ -549,7 +553,7 @@ nav {
     }
   /* Turn it into an X when open */
     .button.menu-opened{
-      background: #2e1f62;
+      background: #467190;
     }
     .button.menu-opened:after {
         transition: all .3s ease;

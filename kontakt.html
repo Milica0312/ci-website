@@ -29,7 +29,9 @@
             <label for="fancy-textarea">Poruka</label>
           </div>
 
-          <button type="submit" tabindex="0">Pošalji</button>
+          <button onclick="return upis();" tabindex="0">Pošalji</button>
+          <div id="placefortable">
+          </div><br><br>
         </form>
 
 
@@ -45,7 +47,7 @@
             <li><a href="index.html" class="hvr-sweep-to-right">POČETNA</a>  </li>
               <li><a href="onama.html" class="hvr-sweep-to-right">O NAMA</a></li>
               <li><a href="usluge.html" class="hvr-sweep-to-right">USLUGE</a></li>
-              <li><a href="vesti.html" class="hvr-sweep-to-right">VESTI</a></li>
+              <li><a href="blog.html" class="hvr-sweep-to-right">VESTI</a></li>
               <li><a href="kontakt.html" class="hvr-sweep-to-right">KONTAKT</a></li>
             <li>  <a href="edukacija.html" class="hvr-sweep-to-right">EDUKACIJA</a></li>
           </ul>
@@ -55,7 +57,7 @@
     </div>
       <div id="particle-canvas" class="heigher"></div>
     <footer class="absfcontact">
-      <p>&copy; 2018 CRYPTOCURRENCY INVESTMENT<br />Sva prava zadržana. <br />Doublemp Tim<p>
+      <p>&copy; 2018 CRYPTOCURRENCY INVESTMENT<br />Sva prava zadržana. <br /><a style="color:white; padding:5px;" href="http://doublemp-solutions.com" target="_blank">Doublemp Tim</a><p>
       <p>
         Ulaganje u kritpovalute predstavlja rizik uprkos velikoj mogućnosti za zaradu. Pre donošenja odluke da kupite kriptovalute, savetujemo da istražite i da uložite samo onoliko novca koliko ste spremni da izgubite.
       </p>
@@ -71,6 +73,85 @@
     <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.min.js'></script>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script  src="js/main.js"></script>
+    <script>
+      function upis(){
+          var ime = document.getElementById("ime").value;
+          //var ime_slavljenik = document.getElementById("ime_slavljenik").value;
+          var email =  document.getElementById("email").value;
+
+
+          //var datum = $(".datum:checked").val();
+          var pitanje =  document.getElementById("pitanje").value;
+
+
+
+             var ind=0;
+          if (ime===null || ime===''){
+            document.getElementById("ime_error").innerHTML = "Molimo vas popunite polje.";
+            ind=1;
+          }
+                  if (email===null || email===''){
+            document.getElementById("email_error").innerHTML = "Molimo vas popunite polje.";
+            ind=1;
+          }
+                  if(pitanje===null || pitanje===''){
+            document.getElementById("pitanje_error").innerHTML = "Molimo vas popunite polje.";
+            ind=1;
+          }
+
+                  if(ind===1){
+            return false;
+            /*document.getElementById("email_error").innerHTML = email;
+            document.getElementById("telefon_error").innerHTML = telefon;
+            //var ime_slavljenik =  $("#ime_slavljenik:selected").val();
+            document.getElementById("datum_ostavljanja_error").innerHTML = datum_ostavljanja;
+            document.getElementById("vreme_dolaska_error").innerHTML = vreme_dolaska;
+            document.getElementById("datum_preuzimanja_error").innerHTML = datum_preuzimanja;*/
+            //window.location="./#potvrda";
+          }
+          else{
+            var ime = document.getElementById("ime").value;
+            //var ime_slavljenik = document.getElementById("ime_slavljenik").value;
+            var email =  document.getElementById("email").value;
+
+
+            //var datum = $(".datum:checked").val();
+            var pitanje =  document.getElementById("pitanje").value;
+
+            $.ajax({
+
+              type:"post",
+              url: "upis.php",
+              cashe: false,
+              //data: dataString,
+              data: {ime:ime,email:email,pitanje:pitanje,captcha:grecaptcha.getResponse()},
+
+              success: function(data){
+                document.getElementById("placefortable").innerHTML = data;
+               //window.location.href = "thankyou.php";
+               /* window.alert(data);*/
+                /*
+                if(data == "Hvala na postavljenom pitanju. Očekujte odgovor u roku od 24h."){
+                 document.getElementById("kontaktfrmanone").style.display = "none";
+                 document.getElementById("placefortable").innerHTML = data;
+                 document.getElementById("placefortable").style.color = "#000000";
+                }
+                else{
+                  document.getElementById("placefortable").innerHTML = data;
+                  document.getElementById("placefortable").style.color = "#ed1a3b";
+                }*/
+              },
+              error: function (req, status, err) {
+                //alert(data),
+            console.log('Something went wrong', status, err);
+            }
+            })
+            return false;
+          }
+
+      }
+
+      </script>
   </body>
 
 </html>
