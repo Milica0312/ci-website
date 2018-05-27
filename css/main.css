@@ -363,7 +363,9 @@ body {
         padding-top: 0;
         z-index: 1000000; } }
     body .navholder .logoimg {
-      float: left; }
+      float: left;
+      width: 150px;
+      padding-left: 100px; }
     body .navholder nav a {
       color: white;
       text-decoration: none;
