@@ -66,7 +66,7 @@ require_once 'include/functions.php';
 		if ($rez) {
 
 			$emailod = "$email";
-			$email_to = 'milicapavlovic0312@gmail.com'; // treba da bude  'milicapavlovic0312@gmail.com';
+			$email_to = 'office@cryptoinvestment.rs'; // treba da bude  'milicapavlovic0312@gmail.com';
 			$subject = "CRYPTOINVESTMENT - Kontakt forma";
 			$headers = "From: $emailod\r\n";
 			$headers .= "Content-type: text/html; charset=utf-8\r\n";

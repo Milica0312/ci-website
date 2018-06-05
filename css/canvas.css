@@ -1,3 +1,15 @@
+.educationbckg{
+  background-image: url(../imgs/shutterstock_608688050.jpg);
+background-size: contain;
+background-size: cover;
+background-repeat: repeat;
+}
+.error{
+  color: white;
+}
+#placefortable{
+  color: white;
+}
 .slogan{
   position: absolute;
 top: 30%;
@@ -20,7 +32,11 @@ text-align: center;
 .educationf{
   margin:0;
   background:rgba(0,0,0,0.5);
-  position: absolute;
+  position: relative;
+  margin-top: 25%;
+}
+.educationf0{
+  margin-top: 0 !important;
 }
 .absf{
   position: absolute;
@@ -516,6 +532,20 @@ nav {
 
 
 @media screen and (max-width: 768px) {
+  .overhidden{
+    overflow: hidden;
+  }
+  .slogan {
+    position: absolute;
+   top: 0;
+    /* left: 25%; */
+    color: white;
+    font-size: 36px;
+    width: 100%;
+    margin:0;
+    font-weight: 100;
+    text-align: center;
+}
   .educationf{
     position: relative !important;
   }
@@ -742,6 +772,18 @@ nav {
   }
   .about-holder{
     padding:30px 20px !important;
+  }
+  .about-holder{
+      position: relative;
+        margin-top: 21%;
+        width:90% !important;
+        float:right;
+        background-color: rgba(0,0,0,0.3);
+        color: white;
+        border-radius: 15px;
+        line-height: 24px;
+        text-align: center;
+        border:1px solid black;
   }
 }
 /**/

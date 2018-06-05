@@ -3,12 +3,16 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>CRYPTOCURRENCY INVESTMENT</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/canvas.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="96x96" href="imgs/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="imgs/apple-icon-180x180.png">
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   </head>
-  <body class="">
+  <body class="educationbckg">
 
 
     <div class="navholder">
@@ -22,7 +26,7 @@
           <li><a href="index.html" class="hvr-sweep-to-right">POČETNA</a>  </li>
             <li><a href="onama.html" class="hvr-sweep-to-right">O NAMA</a></li>
             <li><a href="usluge.html" class="hvr-sweep-to-right">USLUGE</a></li>
-            <li><a href="blog.html" class="hvr-sweep-to-right">VESTI</a></li>
+            <li><a href="#" class="hvr-sweep-to-right">BLOG</a></li>
             <li><a href="kontakt.php" class="hvr-sweep-to-right">KONTAKT</a></li>
           <li>  <a href="edukacija.html" class="hvr-sweep-to-right">EDUKACIJA</a></li>
         </ul>
@@ -63,7 +67,7 @@
               </p>
           	</li>
             <li>
-          		<a>Ko stvora  Bitkoin?</a>
+          		<a>Ko stvara  Bitkoin?</a>
           		<p>Niko i svi. Bitkoin nije fizički štampan od strane centralne banke. Centralne banke uvek mogu jednostavno proizvesti više novca kako bi pokrile nacionalni dug, čime devalviraju svoju valutu.
               <br />Nasuprot tome bitkoin se digitalno stvara, od strane zajednice ljudi kojima se svako može pridružiti. Bitkoini se stvaraju u procesu rudarenja koristeći računarsku moć svih učesnika u  distribuiranoj mreži.
               <br />Bitkoin mreža pored toga što omogućava stvaranje novih bitkoina, takođe i obrađuje transakcije ostvarene bitkoinom čime omogućava da bitkoin postane glavno sredstvo razmene vrednosti na internetu.
@@ -83,7 +87,7 @@
               </p>
           	</li>
             <li>
-          		<a>Koje su ključne karakteristike bitkoina?</a>
+          		<a id="animmarginfuter">Koje su ključne karakteristike bitkoina?</a>
           		<p>Bitkoin ima nekoliko važnih karakteristika koje ga čine bitno različitim od konvencionalnih valuta.
                 <br />  1. Decentralizovanost
                   Bitkoin mrežu ne kontroliše jedan centralni autoritet. Svaka mašina koja rudari bitkoin i obrađuje transakcije čini deo mreže. To znači da jedna centralna vlast ne može jednostavno odlučiti da oduzme ljudima njihove bitkoine ili da ih proglasi nevažećim kako se do sada dešavalo mnogo puta u istoriji. A U slučaju da neki deo mreže prekine sa radom iz nekog razloga, ostatak mreže nastavlja da neometano radi.
@@ -115,14 +119,20 @@
 
 
         <div class="documents">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Uslovi korišćenja</a>
+          <a href="Politika privatnosti.docx" >Privacy Policy</a>
+          <a href="Uslovi korišćenja.docx" >Uslovi korišćenja</a>
         </div>
 
       </footer>
 
 
+      <script>
+    $('#animmarginfuter').click(function() {
 
+            $(".educationf").toggleClass('educationf0');
+
+      });
+      </script>
 
 
 

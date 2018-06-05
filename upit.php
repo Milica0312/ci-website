@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>CRYPTOCURRENCY INVESTMENT</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/canvas.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,17 +25,17 @@
           <div class="row">
             <input type="text" name="fancy-text" id="ime"/>
             <label for="fancy-text">Ime i prezime</label>
-              <p id="ime_error"></p>
+              <p class="error" id="ime_error"></p>
           </div>
           <div class="row">
             <input type="email" name="fancy-text" id="email"/>
             <label for="fancy-text">Email</label>
-              <p id="email_error"></p>
+              <p class="error" id="email_error"></p>
           </div>
           <div class="row">
             <input type="tel" name="fancy-text" id="broj"/>
             <label for="fancy-text">Broj telefona</label>
-            <p id="broj_error"></p>
+            <p class="error" id="broj_error"></p>
           </div>
           <div class="row">
             <select id="usluga">
@@ -47,7 +47,7 @@
           <div class="row">
             <textarea name="fancy-textarea" id="notes"></textarea>
             <label for="fancy-textarea">Navesti kada i kako je najbolje kontaktirati Vas</label>
-              <p id="notes_error"></p>
+              <p class="error" id="notes_error"></p>
           </div>
           <div class="row">
             <div class="g-recaptcha" data-sitekey="6LcwwVsUAAAAACSb574xx--lZzT9gL32aUJyVT46" data-callback="recaptchaCallback"></div>
@@ -69,7 +69,7 @@
             <li><a href="index.html" class="hvr-sweep-to-right">POČETNA</a>  </li>
               <li><a href="onama.html" class="hvr-sweep-to-right">O NAMA</a></li>
               <li><a href="usluge.html" class="hvr-sweep-to-right">USLUGE</a></li>
-              <li><a href="blog.html" class="hvr-sweep-to-right">VESTI</a></li>
+              <li><a href="#" class="hvr-sweep-to-right">BLOG</a></li>
               <li><a href="kontakt.php" class="hvr-sweep-to-right">KONTAKT</a></li>
             <li>  <a href="edukacija.html" class="hvr-sweep-to-right">EDUKACIJA</a></li>
           </ul>
@@ -78,12 +78,12 @@
 
     </div>
       <div id="particle-canvas" class="heigher"></div>
-    <footer class="">
+    <footer class="" style="position:relative;">
       <p>&copy; 2018 CRYPTOCURRENCY INVESTMENT<br />Sva prava zadržana. <br /><a style="color:white; padding:5px;" href="http://doublemp-solutions.com" target="_blank">Doublemp Tim</a><p>
 
         <div class="documents">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Uslovi korišćenja</a>
+          <a href="Politika privatnosti.docx" >Privacy Policy</a>
+          <a href="Uslovi korišćenja.docx" >Uslovi korišćenja</a>
         </div>
     </footer>
 
