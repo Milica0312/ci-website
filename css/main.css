@@ -56,10 +56,22 @@
       margin-bottom: 25px;
       position: relative;
       overflow: hidden; }
-    .contact-holder form input[type="text"], .contact-holder form input[type="password"], .contact-holder form input[type="email"], .contact-holder form input[type="tel"], .contact-holder form textarea, .contact-holder form select {
+    .contact-holder form input[type="text"], .contact-holder form input[type="password"], .contact-holder form input[type="email"], .contact-holder form input[type="tel"], .contact-holder form textarea {
       width: 100%;
       height: 40px;
       padding: 10px 10px 10px 90px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      color: #333;
+      border-radius: 3px;
+      -webkit-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+      -o-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+      transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9); }
+    .contact-holder form select {
+      width: 100%;
+      height: 40px;
+      padding: 0;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
       border: 1px solid #ccc;
@@ -94,6 +106,32 @@
       transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
       -webkit-transform: translateZ(0) translateX(0);
       transform: translateZ(0) translateX(0); }
+    @media screen and (max-width: 768px) {
+      .contact-holder form textarea + label {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        height: 40px;
+        line-height: 14px;
+        font-weight: bold;
+        width: 100px;
+        text-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        text-transform: uppercase;
+        /* letter-spacing: .05em; */
+        color: white;
+        background: #0288D1;
+        border-radius: 3px 0 0 3px;
+        -webkit-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+        -o-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+        transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+        -webkit-transform: translateZ(0) translateX(0);
+        transform: translateZ(0) translateX(0);
+        font-size: 12px !important;
+        padding: 0 5px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box; } }
     .contact-holder form textarea + label {
       width: 100%;
       border-radius: 3px 3px 0 0; }
@@ -414,7 +452,7 @@ body {
       display: none; }
   body .coin-holder {
     position: absolute;
-    top: 60%;
+    bottom: 80px;
     z-index: 1000;
     width: 100%; }
     @media screen and (max-width: 768px) {
@@ -538,7 +576,7 @@ body {
             height: 50px; }
   body footer {
     margin-top: 5px;
-    bottom: 0;
+    /*bottom: 0;*/
     width: 100%;
     text-align: center;
     color: white;
@@ -558,7 +596,8 @@ body {
         padding-top: 5px; }
 
 .futerabsindex footer {
-  position: absolute; }
+  position: absolute;
+  bottom: 0; }
   @media screen and (max-width: 768px) {
     .futerabsindex footer {
       position: relative; } }

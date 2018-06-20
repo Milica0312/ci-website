@@ -79,7 +79,7 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     background-size: cover;
-    
+
     @include mQ(768px){
       height: auto;
     }
@@ -105,7 +105,7 @@ body{
 
     .coin-holder{
       position: absolute;
-      top:60%;
+      bottom: 80px;
       z-index: 1000;
       width: 100%;
       @include mQ(768px){
@@ -285,7 +285,7 @@ body{
 
   footer {
     margin-top: 5px;
-    bottom: 0;
+    /*bottom: 0;*/
     width: 100%;
     text-align: center;
     color: white;
@@ -314,6 +314,7 @@ body{
 .futerabsindex{
   footer{
     position: absolute;
+    bottom:0;
     @include mQ(768px){
       position: relative;
     }
